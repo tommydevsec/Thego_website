@@ -1,17 +1,385 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b0e0c"><title>THEGO — From Arrival to Doorstep</title>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0e0c">
+<title>THEGO | From Arrival to Doorstep. Airport cargo coordination in Lagos</title>
+<meta name="description" content="THEGO helps individuals and businesses coordinate airport cargo collection and onward delivery in Lagos, Nigeria. Request a quote and we will confirm the details with you.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="THEGO | From Arrival to Doorstep.">
+<meta property="og:description" content="Airport cargo coordination and last-mile delivery planning in Lagos. Request a quote.">
+<meta property="og:url" content="https://tommydevsec.github.io/Thego_website/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b0e0c'/%3E%3Ctext x='32' y='43' font-family='Arial' font-size='30' font-weight='900' font-style='italic' text-anchor='middle' fill='%23b8ff35'%3EGO%3C/text%3E%3C/svg%3E">
 <style>
-:root{--bg:#0b0e0c;--panel:#121714;--green:#b8ff35;--white:#f5f7f4;--muted:#a5afa8;--line:#28312b}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font:16px/1.55 Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}header{position:sticky;top:0;background:#0b0e0cf5;border-bottom:1px solid #ffffff15;z-index:5}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.logo{font-size:28px;font-weight:950;letter-spacing:-1.5px;font-style:italic}.logo span,h1 span{color:var(--green)}.navlinks{display:flex;gap:22px;font-size:13px;color:#d3dad4}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 17px;border-radius:7px;font-weight:800;font-size:14px;border:1px solid transparent;cursor:pointer}.greenbtn{background:var(--green);color:#101510}.outline{border-color:#48534a}.hero{padding:76px 0 65px;position:relative;overflow:hidden}.eyebrow,.kicker{color:var(--green);text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:850}.eyebrow:before{content:"";display:inline-block;width:24px;height:2px;background:var(--green);margin:0 10px 3px 0}h1{font-size:clamp(43px,7vw,80px);line-height:.99;letter-spacing:-3px;margin:22px 0;max-width:760px}.lead{font-size:18px;color:#b6c0b8;max-width:640px}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 18px}.note{font-size:12px;color:#849087}.visual{height:330px;border:1px solid #29342b;border-radius:18px;background:radial-gradient(circle at 70% 20%,#233520,#0e120f 65%);position:relative;overflow:hidden}.route{position:absolute;inset:0;width:100%;height:100%}.plane{position:absolute;top:28px;left:26px;color:var(--green);font-size:11px;letter-spacing:2px}.cargo{position:absolute;bottom:18px;left:18px;right:18px;background:#0b0f0def;border:1px solid #354139;border-radius:10px;padding:15px;display:flex;justify-content:space-between;gap:10px;align-items:center}.cargo small{display:block;color:#9eaaa0;font-size:10px;letter-spacing:1px}.status{color:var(--green);background:#b8ff351a;padding:6px 8px;border-radius:4px;font-size:10px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.stat{border-top:1px solid var(--line);padding-top:10px}.stat strong{display:block;font-size:20px}.stat span{font-size:11px;color:var(--muted)}section{padding:64px 0}.section-top{max-width:700px;margin-bottom:28px}h2{font-size:clamp(30px,4vw,45px);letter-spacing:-1.5px;line-height:1.08;margin:10px 0}.sub{color:var(--muted);max-width:700px}.cards,.audience{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:22px}.num{font-size:11px;color:var(--green);font-weight:900;letter-spacing:1px}.card h3{margin:12px 0 7px;font-size:18px}.card p,.card li{font-size:13px;color:var(--muted)}.card ul{padding-left:18px}.card li{margin:6px 0}.darksection{background:#101511;border-block:1px solid #ffffff08}.audience{grid-template-columns:1fr 1fr}.tag{display:inline-block;border:1px solid #43513f;color:var(--green);font-size:10px;font-weight:800;letter-spacing:1px;padding:5px 8px;border-radius:4px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{padding:18px;border-left:2px solid #3b4a3d}.step b{display:block;margin:8px 0}.step p{font-size:13px;color:var(--muted)}.quotegrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:start}.formpanel{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:22px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:5px}.full{grid-column:1/-1}label{font-size:12px;color:#c8d0ca;font-weight:700}input,select,textarea{width:100%;padding:11px;border:1px solid #39443b;border-radius:7px;background:#0b0e0c;color:white;font:inherit;font-size:14px}textarea{min-height:75px}.formpanel button{width:100%;margin-top:15px}.formnote{font-size:11px;color:var(--muted);margin-top:9px}.faq{display:grid;grid-template-columns:1fr 1fr;gap:12px}.faq article{border:1px solid var(--line);padding:18px;border-radius:10px}.faq h3{font-size:15px;margin:0 0 7px}.faq p{font-size:13px;color:var(--muted);margin:0}.cta{display:flex;justify-content:space-between;align-items:center;gap:22px;background:var(--green);color:#101510;padding:32px;border-radius:14px}.cta h2{margin:0}.cta p{max-width:600px}.cta .btn{background:#101510;color:white;flex-shrink:0}footer{border-top:1px solid var(--line);padding:25px 0 30px;color:#9da79f;font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;align-items:center}.legal{font-size:11px;color:#78837b;margin-top:14px;max-width:850px}
-@media(max-width:760px){.nav{height:65px}.navlinks{display:none}.hero{padding:50px 0}.hero-grid,.quotegrid{grid-template-columns:1fr;gap:24px}.visual{height:280px}.cards,.audience{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.faq{grid-template-columns:1fr}.cta{align-items:flex-start;flex-direction:column}section{padding:50px 0}h1{letter-spacing:-2px}}@media(max-width:430px){.steps,.fields{grid-template-columns:1fr}.full{grid-column:auto}.actions .btn{width:100%}}
-</style></head><body>
-<header><div class="wrap nav"><a class="logo" href="#home">THE<span>GO</span></a><nav class="navlinks"><a href="#services">Services</a><a href="#business">For business</a><a href="#how">How it works</a><a href="#quote">Get a quote</a></nav><a class="btn greenbtn" href="#quote">Request a quote ↗</a></div></header>
-<main id="home"><section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">Airport cargo coordination · Lagos</div><h1>Your cargo.<br>From airport<br>to <span>destination.</span></h1><p class="lead">THEGO helps individuals and businesses coordinate airport cargo collection and onward delivery arrangements, with clear quotes and direct communication from the start.</p><div class="actions"><a class="btn greenbtn" href="#quote">Get a delivery quote ↗</a><a class="btn outline" href="#business">Business solutions ↓</a></div><div class="note">Pilot enquiries only. Every request is checked and confirmed individually before acceptance.</div><div class="stats"><div class="stat"><strong>01</strong><span>Share details</span></div><div class="stat"><strong>02</strong><span>Confirm quote</span></div><div class="stat"><strong>03</strong><span>Agree delivery plan</span></div></div></div><div class="visual"><svg class="route" viewBox="0 0 500 360" fill="none" aria-hidden="true"><path d="M45 85 C160 70 125 220 245 200 S335 100 430 120" stroke="#B8FF35" stroke-width="2" stroke-dasharray="5 8"/><circle cx="45" cy="85" r="7" fill="#B8FF35"/><circle cx="430" cy="120" r="7" fill="#B8FF35"/><g transform="translate(195 160)" stroke="#B8FF35" stroke-width="2"><rect width="72" height="58" rx="4" fill="#1b291c"/><path d="M0 18h72M36 0v58"/></g><g transform="translate(35 50)" stroke="#B8FF35" stroke-width="2"><path d="M0 15h31l10-10h18l-7 10h18l10 6-10 6H52l7 10H41L31 27H0z" fill="#17251a"/></g><g transform="translate(390 82)" stroke="#B8FF35" stroke-width="2"><path d="M0 0h32v32H0zM-5 32h42M7 8h18M7 15h18M7 22h11"/></g></svg><div class="plane">LAGOS · MMIA</div><div class="cargo"><div><small>One clear starting point</small><strong>Airport → Destination</strong></div><span class="status">QUOTE FIRST</span></div></div></div></section>
-<section id="services"><div class="wrap"><div class="section-top"><div class="kicker">Services</div><h2>Built around your shipment.</h2><p class="sub">We start by understanding what needs to move, where it is going and what arrangements are required. Services and availability are confirmed before any job is accepted.</p></div><div class="cards"><article class="card"><div class="num">01 / COORDINATE</div><h3>Airport cargo coordination</h3><p>Plan the handoff from airport cargo collection to the next stage.</p><ul><li>Confirm cargo details and collection requirements</li><li>Check who is authorised to release and collect it</li><li>Agree the next step before dispatch</li></ul></article><article class="card"><div class="num">02 / DELIVER</div><h3>Last-mile delivery planning</h3><p>Plan onward delivery based on destination, size, handling and capacity.</p><ul><li>Destination and route review</li><li>Delivery partner availability check</li><li>Quote agreed before acceptance</li></ul></article><article class="card"><div class="num">03 / COMMUNICATE</div><h3>Clear shipment updates</h3><p>Know what has been agreed and who to contact about your shipment.</p><ul><li>Written quote and job details</li><li>Updates agreed for each job</li><li>Proof of delivery where included in the arrangement</li></ul></article></div></div></section>
-<section id="business" class="darksection"><div class="wrap"><div class="section-top"><div class="kicker">For businesses and individuals</div><h2>One point of contact. Two ways to work with us.</h2><p class="sub">Business needs are our long-term priority, and individual customers are welcome too. Every request is scoped and quoted before acceptance.</p></div><div class="audience"><article class="card"><span class="tag">BUSINESS PRIORITY</span><h3>For importers, retailers and teams</h3><p>Discuss recurring deliveries, cargo handoffs or a one-off request.</p><ul><li>One contact for enquiries and coordination</li><li>Written quotes and agreed job details</li><li>Options reviewed against route and cargo requirements</li><li>Potential repeat-service arrangements, subject to capacity</li></ul><a class="btn greenbtn" href="#quote">Discuss a business need ↗</a></article><article class="card"><span class="tag">FOR INDIVIDUALS</span><h3>For personal cargo</h3><p>Need to move an item from an airport collection point to a home or another destination?</p><ul><li>Tell us what the item is and where it needs to go</li><li>Share approximate size and weight</li><li>Confirm quote and collection arrangements first</li><li>Ask what delivery confirmation is available</li></ul><a class="btn outline" href="#quote">Request a personal quote ↗</a></article></div></div></section>
-<section id="how"><div class="wrap"><div class="section-top"><div class="kicker">The process</div><h2>Four clear steps.</h2><p class="sub">An enquiry is not a confirmed booking. We confirm availability, authority to collect, pricing and terms before accepting a shipment.</p></div><div class="steps"><div class="step"><div class="num">STEP 01</div><b>Send the details</b><p>Origin, destination, cargo type, size or weight and preferred date.</p></div><div class="step"><div class="num">STEP 02</div><b>We review the request</b><p>Collection authority, cargo release, partner availability and handling needs are checked.</p></div><div class="step"><div class="num">STEP 03</div><b>Approve quote and terms</b><p>Review the price and applicable terms before the job is accepted.</p></div><div class="step"><div class="num">STEP 04</div><b>Follow the agreed plan</b><p>Communication and proof of delivery are provided as agreed for that shipment.</p></div></div></div></section>
-<section id="quote"><div class="wrap quotegrid"><div><div class="kicker">Request a quote</div><h2>Tell us what needs to move.</h2><p class="sub">Share a few details. This form prepares a WhatsApp enquiry so we can clarify the request and confirm whether we can handle it.</p><ul style="padding-left:19px;color:var(--muted);font-size:14px"><li>For businesses and individuals</li><li>No account required</li><li>Submitting is not a confirmed booking</li></ul><p class="note">Avoid entering sensitive identity documents or payment details here.</p></div><form class="formpanel" id="quoteForm"><div class="fields"><div class="field"><label for="kind">Enquiry type</label><select id="kind" required><option>Business</option><option>Individual</option></select></div><div class="field"><label for="name">Name / business name</label><input id="name" placeholder="Your name or company" required></div><div class="field"><label for="origin">Collection location</label><input id="origin" placeholder="Airport / terminal / other" required></div><div class="field"><label for="dest">Delivery destination</label><input id="dest" placeholder="Area / city" required></div><div class="field"><label for="cargoType">What is being moved?</label><input id="cargoType" placeholder="Brief cargo description" required></div><div class="field"><label for="size">Approx. weight / dimensions</label><input id="size" placeholder="e.g. 10 kg, medium carton"></div><div class="field"><label for="date">Preferred date</label><input id="date" type="date"></div><div class="field"><label for="phone">Phone / WhatsApp number</label><input id="phone" type="tel" placeholder="Your contact number" required></div><div class="field full"><label for="notes">Extra details (optional)</label><textarea id="notes" placeholder="Handling needs, quantity, recurring business need..."></textarea></div></div><button class="btn greenbtn" type="submit">Prepare WhatsApp enquiry ↗</button><div class="formnote">WhatsApp opens with your message ready to review. This prototype does not send or store form data. Replace the generic WhatsApp destination with THEGO's business number before launch.</div></form></div></section>
-<section class="darksection" id="faq"><div class="wrap"><div class="section-top"><div class="kicker">FAQs</div><h2>Before you enquire</h2></div><div class="faq"><article><h3>Is THEGO accepting shipments now?</h3><p>This is a pilot-stage prototype. Availability and the appropriate operating arrangement must be confirmed before any job is accepted.</p></article><article><h3>Do you work with businesses and individuals?</h3><p>The enquiry flow is designed for both. Business and repeat-service requests are a priority, subject to capacity and compliant arrangements.</p></article><article><h3>How is the price decided?</h3><p>Quotes depend on route, cargo size and type, timing, handling and partner availability. Agree the quote before acceptance.</p></article><article><h3>Can you collect cargo directly at the airport?</h3><p>This depends on cargo-release rules, the customer's authority and airport requirements. These must be checked for each shipment.</p></article></div></div></section>
-<section id="partners"><div class="wrap"><div class="cta"><div><h2>Interested in working with THEGO?</h2><p>Businesses, logistics operators and delivery partners can introduce themselves and describe their coverage or requirements.</p></div><a class="btn" href="#quote">Start a conversation ↗</a></div></section></main>
-<footer><div class="wrap"><div class="foot"><a class="logo" href="#home">THE<span>GO</span></a><div>From Arrival to Doorstep.</div><div><a href="#terms">Terms</a> · <a href="#privacy">Privacy</a> · <a href="#quote">Contact</a></div></div><div class="legal" id="terms"><b>Prototype notice:</b> This page is not proof that THEGO has a courier/logistics licence, airport access, insurance, live tracking or active delivery capacity. Before accepting paid shipments, confirm regulatory requirements and operating arrangements, including licensed-partner terms where relevant. Replace this placeholder with reviewed terms before launch.</div><div class="legal" id="privacy">Privacy placeholder: before launch, explain what information is collected, why it is needed, whether it is shared with service partners, retention periods and how users can exercise their data rights.</div><div class="legal">© 2026 THEGO · Website prototype</div></div></footer>
+:root{--bg:#0b0e0c;--panel:#121714;--green:#b8ff35;--white:#f5f7f4;--muted:#aab4ac;--line:#28312b;--err:#ff8a7a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--white);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;-webkit-text-size-adjust:100%}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--green);color:#101510;padding:10px 14px;border-radius:6px;font-weight:800;z-index:20}
+.skip:focus{left:8px}
+.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;background:#0b0e0cf5;border-bottom:1px solid #ffffff15;z-index:10}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{font-size:28px;font-weight:950;letter-spacing:-1.5px;font-style:italic}
+.logo span,h1 span{color:var(--green)}
+.navlinks{display:flex;gap:26px;font-size:14px;color:#d3dad4}
+.navlinks a:hover{color:var(--green)}
+.navright{display:flex;align-items:center;gap:10px}
+.menubtn{display:none;background:none;border:1px solid #48534a;color:var(--white);border-radius:7px;width:44px;height:44px;font-size:20px;cursor:pointer}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:7px;font-weight:800;font-size:15px;border:1px solid transparent;cursor:pointer;font-family:inherit;min-height:44px}
+.greenbtn{background:var(--green);color:#101510}
+.greenbtn:hover{background:#cbff66}
+.outline{border-color:#48534a;background:none;color:var(--white)}
+.outline:hover{border-color:var(--green)}
+.hero{padding:76px 0 65px;position:relative;overflow:hidden}
+.eyebrow,.kicker{color:var(--green);font-size:13px;font-weight:800;letter-spacing:.5px}
+.eyebrow:before{content:"";display:inline-block;width:24px;height:2px;background:var(--green);margin:0 10px 4px 0}
+h1{font-size:clamp(43px,7vw,80px);line-height:.99;letter-spacing:-3px;margin:22px 0;max-width:760px;font-weight:900}
+.lead{font-size:18px;color:#c2ccc4;max-width:620px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 18px}
+.note{font-size:13px;color:#93a096}
+.visual{height:330px;border:1px solid #29342b;border-radius:18px;background:radial-gradient(circle at 70% 20%,#233520,#0e120f 65%);position:relative;overflow:hidden}
+.route{position:absolute;inset:0;width:100%;height:100%}
+.plane{position:absolute;top:28px;left:26px;color:var(--green);font-size:12px;letter-spacing:1px;font-weight:700}
+.cargo{position:absolute;bottom:18px;left:18px;right:18px;background:#0b0f0def;border:1px solid #354139;border-radius:10px;padding:15px;display:flex;justify-content:space-between;gap:10px;align-items:center}
+.cargo small{display:block;color:#a9b5ab;font-size:12px}
+.status{color:var(--green);background:#b8ff351a;padding:6px 9px;border-radius:4px;font-size:11px;font-weight:800;white-space:nowrap}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px}
+.stat{border-top:1px solid var(--line);padding-top:10px}
+.stat strong{display:block;font-size:20px;color:var(--green)}
+.stat span{font-size:13px;color:var(--muted)}
+section{padding:68px 0}
+.section-top{max-width:720px;margin-bottom:30px}
+h2{font-size:clamp(30px,4vw,45px);letter-spacing:-1.5px;line-height:1.08;margin:10px 0;font-weight:900}
+.sub{color:var(--muted);max-width:700px;font-size:17px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.cards.four{grid-template-columns:repeat(4,1fr)}
+.audience{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:24px;display:flex;flex-direction:column;align-items:flex-start}
+.card h3{margin:12px 0 8px;font-size:19px}
+.card p,.card li{font-size:15px;color:var(--muted)}
+.card ul{padding-left:18px;margin:10px 0 20px}
+.card li{margin:6px 0}
+.card .btn{margin-top:auto}
+.darksection{background:#101511;border-block:1px solid #ffffff08}
+.tag{display:inline-block;border:1px solid #43513f;color:var(--green);font-size:12px;font-weight:800;padding:5px 9px;border-radius:4px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.step{padding:18px;border-left:2px solid #3b4a3d}
+.step .tag{border:0;padding:0}
+.step b{display:block;margin:8px 0;font-size:17px}
+.step p{font-size:15px;color:var(--muted);margin:0}
+.quotegrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:start}
+.quotegrid ul{padding-left:19px;color:var(--muted);font-size:15px}
+.formpanel{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:24px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:6px}
+.full{grid-column:1/-1}
+[hidden]{display:none!important}
+label{font-size:14px;color:#d3dad4;font-weight:700}
+.opt{font-weight:400;color:var(--muted)}
+input,select,textarea{width:100%;padding:12px;border:1px solid #4a574d;border-radius:7px;background:#0b0e0c;color:#fff;font:inherit;font-size:16px}
+input::placeholder,textarea::placeholder{color:#7d8981}
+textarea{min-height:90px;resize:vertical}
+.field.bad input,.field.bad select,.field.bad textarea{border-color:var(--err)}
+.err{color:var(--err);font-size:13px;min-height:0}
+.formstatus{margin-top:14px;padding:12px 14px;border-radius:8px;border:1px solid var(--err);color:var(--err);font-size:14px}
+.formpanel .submit{width:100%;margin-top:16px}
+.formnote{font-size:13px;color:var(--muted);margin-top:10px}
+.ready{margin-top:18px;border:1px solid #43513f;background:#0e140f;border-radius:10px;padding:18px}
+.ready h3{margin:0 0 6px;font-size:18px}
+.ready p{margin:0 0 12px;font-size:14px;color:var(--muted)}
+.ready pre{white-space:pre-wrap;word-break:break-word;font:inherit;font-size:14px;background:#0b0e0c;border:1px solid var(--line);border-radius:8px;padding:12px;margin:0 0 14px;color:#dfe6e0}
+.ready .row{display:flex;gap:10px;flex-wrap:wrap}
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.faq article{border:1px solid var(--line);padding:20px;border-radius:10px}
+.faq h3{font-size:17px;margin:0 0 8px}
+.faq p{font-size:15px;color:var(--muted);margin:0}
+.cta{display:flex;justify-content:space-between;align-items:center;gap:22px;background:var(--green);color:#101510;padding:34px;border-radius:14px}
+.cta h2{margin:0}
+.cta p{max-width:600px;margin:10px 0 0}
+.cta .btn{background:#101510;color:#fff;flex-shrink:0}
+.cta .btn:hover{background:#000}
+footer{border-top:1px solid var(--line);padding:34px 0 36px;color:#a4aea6;font-size:14px}
+.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}
+.foot a:hover{color:var(--green)}
+.legal{font-size:14px;color:#96a198;margin-top:26px;max-width:820px}
+.legal h3{font-size:15px;color:#d3dad4;margin:0 0 6px}
+.legal ul{padding-left:18px;margin:6px 0}
+.legal li{margin:4px 0}
+.copy{font-size:13px;color:#8a958d;margin-top:24px}
+@media(max-width:900px){.cards.four{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){
+.nav{height:64px}
+.menubtn{display:inline-flex;align-items:center;justify-content:center}
+.navlinks{display:none;position:absolute;top:64px;left:0;right:0;background:#0b0e0cfb;border-bottom:1px solid #ffffff15;flex-direction:column;gap:0;padding:8px 4%}
+.navlinks.open{display:flex}
+.navlinks a{padding:14px 4px;border-bottom:1px solid #ffffff10;font-size:16px}
+.navright .greenbtn{display:none}
+.hero{padding:50px 0}
+.hero-grid,.quotegrid{grid-template-columns:1fr;gap:24px}
+.visual{height:280px}
+.cards,.cards.four,.audience{grid-template-columns:1fr}
+.steps{grid-template-columns:1fr 1fr}
+.faq{grid-template-columns:1fr}
+.cta{align-items:flex-start;flex-direction:column}
+section{padding:52px 0}
+h1{letter-spacing:-2px}
+}
+@media(max-width:480px){.steps,.fields{grid-template-columns:1fr}.full{grid-column:auto}.actions .btn,.cta .btn{width:100%}.stats{gap:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#quote">Skip to the quote form</a>
+<header>
+<div class="wrap nav">
+<a class="logo" href="#home" aria-label="THEGO home">THE<span>GO</span></a>
+<nav class="navlinks" id="menu" aria-label="Main">
+<a href="#services">Services</a><a href="#business">For business</a><a href="#how">How it works</a><a href="#faq">FAQ</a><a href="#partners">Partners</a><a href="#quote">Get a quote</a>
+</nav>
+<div class="navright">
+<a class="btn greenbtn" href="#quote">Request a quote</a>
+<button class="menubtn" id="menubtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button>
+</div>
+</div>
+</header>
+
+<main id="home">
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<div class="eyebrow">From Arrival to Doorstep.</div>
+<h1>Your cargo.<br>From airport<br>to <span>destination.</span></h1>
+<p class="lead">THEGO helps individuals and businesses in Lagos coordinate airport cargo collection and onward delivery, with a clear quote and direct communication from the start.</p>
+<div class="actions">
+<a class="btn greenbtn" href="#quote">Get a delivery quote</a>
+<a class="btn outline" href="#business">Business solutions</a>
+</div>
+<div class="note">Every request is reviewed, and the price and terms are confirmed with you before a shipment is accepted.</div>
+<div class="stats">
+<div class="stat"><strong>1</strong><span>Share the details</span></div>
+<div class="stat"><strong>2</strong><span>Confirm your quote</span></div>
+<div class="stat"><strong>3</strong><span>Agree the delivery plan</span></div>
+</div>
+</div>
+<div class="visual" aria-hidden="true">
+<svg class="route" viewBox="0 0 500 360" fill="none"><path d="M45 85 C160 70 125 220 245 200 S335 100 430 120" stroke="#B8FF35" stroke-width="2" stroke-dasharray="5 8"/><circle cx="45" cy="85" r="7" fill="#B8FF35"/><circle cx="430" cy="120" r="7" fill="#B8FF35"/><g transform="translate(195 160)" stroke="#B8FF35" stroke-width="2"><rect width="72" height="58" rx="4" fill="#1b291c"/><path d="M0 18h72M36 0v58"/></g><g transform="translate(35 50)" stroke="#B8FF35" stroke-width="2"><path d="M0 15h31l10-10h18l-7 10h18l10 6-10 6H52l7 10H41L31 27H0z" fill="#17251a"/></g><g transform="translate(390 82)" stroke="#B8FF35" stroke-width="2"><path d="M0 0h32v32H0zM-5 32h42M7 8h18M7 15h18M7 22h11"/></g></svg>
+<div class="plane">LAGOS AIRPORT CARGO</div>
+<div class="cargo"><div><small>One clear starting point</small><strong>Airport to doorstep</strong></div><span class="status">QUOTE FIRST</span></div>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="wrap">
+<div class="section-top">
+<div class="kicker">Services</div>
+<h2>Built around your shipment.</h2>
+<p class="sub">We start by understanding what needs to move, where it is going and what arrangements are required. Availability is confirmed before any job is accepted.</p>
+</div>
+<div class="cards four">
+<article class="card"><span class="tag">Coordinate</span><h3>Airport cargo coordination</h3><p>Plan the handoff from airport cargo collection to the next stage.</p><ul><li>Confirm cargo details and collection requirements</li><li>Check who is authorised to release and collect it</li><li>Agree the next step before dispatch</li></ul></article>
+<article class="card"><span class="tag">Deliver</span><h3>Last-mile delivery coordination</h3><p>Plan onward delivery based on destination, size, handling and capacity.</p><ul><li>Destination and route review</li><li>Delivery availability check</li><li>Quote agreed before acceptance</li></ul></article>
+<article class="card"><span class="tag">Business</span><h3>Business logistics support</h3><p>One point of contact for importers, retailers and teams with regular cargo.</p><ul><li>One-off or recurring requests</li><li>Written quotes and job details</li><li>Reviewed against route and cargo needs</li></ul></article>
+<article class="card"><span class="tag">Individuals</span><h3>Personal delivery enquiries</h3><p>Moving personal cargo from an airport collection point to a home or another address.</p><ul><li>Tell us what it is and where it goes</li><li>Share approximate size and weight</li><li>Confirm the quote first</li></ul></article>
+</div>
+</div>
+</section>
+
+<section id="business" class="darksection">
+<div class="wrap">
+<div class="section-top">
+<div class="kicker">For businesses and individuals</div>
+<h2>One point of contact. Two ways to work with us.</h2>
+<p class="sub">Businesses are our long-term focus, and individual customers are welcome too. Every request is scoped and quoted before acceptance.</p>
+</div>
+<div class="audience">
+<article class="card"><span class="tag">For businesses</span><h3>Importers, retailers and teams</h3><p>Discuss recurring deliveries, cargo handoffs or a one-off request.</p><ul><li>One contact for enquiries and coordination</li><li>Written quotes and agreed job details</li><li>Options reviewed against route and cargo requirements</li><li>Repeat-service arrangements, subject to capacity</li></ul><a class="btn greenbtn" href="#quote" data-kind="Business">Discuss a business need</a></article>
+<article class="card"><span class="tag">For individuals</span><h3>Personal cargo</h3><p>Need to move an item from an airport collection point to a home or another destination?</p><ul><li>Tell us what the item is and where it needs to go</li><li>Share approximate size and weight</li><li>Confirm the quote and collection arrangements first</li><li>Ask what delivery confirmation is available</li></ul><a class="btn outline" href="#quote" data-kind="Individual">Request a personal quote</a></article>
+</div>
+</div>
+</section>
+
+<section id="how">
+<div class="wrap">
+<div class="section-top">
+<div class="kicker">How it works</div>
+<h2>Four clear steps.</h2>
+<p class="sub">An enquiry is not a confirmed booking. We confirm availability, authority to collect, pricing and terms before accepting a shipment.</p>
+</div>
+<div class="steps">
+<div class="step"><span class="tag">Step 1</span><b>Send the details</b><p>Collection point, destination, cargo type, size or weight and preferred date.</p></div>
+<div class="step"><span class="tag">Step 2</span><b>We review the request</b><p>Collection authority, cargo release, availability and handling needs are checked.</p></div>
+<div class="step"><span class="tag">Step 3</span><b>Approve quote and terms</b><p>Review the price and applicable terms before the job is accepted.</p></div>
+<div class="step"><span class="tag">Step 4</span><b>Follow the agreed plan</b><p>Communication and delivery confirmation are provided as agreed for that shipment.</p></div>
+</div>
+</div>
+</section>
+
+<section id="quote" class="darksection">
+<div class="wrap quotegrid">
+<div>
+<div class="kicker">Request a quote</div>
+<h2>Tell us what needs to move.</h2>
+<p class="sub">Fill in the form and we will prepare a WhatsApp message with your details. You review it and send it yourself.</p>
+<ul><li>For businesses and individuals</li><li>No account required</li><li>An enquiry is not a confirmed booking</li></ul>
+<p class="note">Please do not include ID numbers, bank details or other sensitive information.</p>
+</div>
+<form class="formpanel" id="quoteForm" novalidate>
+<div class="fields">
+<div class="field full"><label for="kind">I am enquiring as</label><select id="kind"><option>Business</option><option>Individual</option><option>Partnership</option></select></div>
+<div class="field"><label for="name">Name or business name</label><input id="name" autocomplete="name" placeholder="Your name or company" required><div class="err" aria-live="polite"></div></div>
+<div class="field"><label for="phone">Phone or WhatsApp number</label><input id="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 0801 234 5678" required><div class="err" aria-live="polite"></div></div>
+<div class="field" data-ship><label for="origin">Collection location</label><input id="origin" placeholder="Airport, terminal or other" required><div class="err" aria-live="polite"></div></div>
+<div class="field" data-ship><label for="dest">Delivery destination</label><input id="dest" placeholder="Area or city" required><div class="err" aria-live="polite"></div></div>
+<div class="field full" data-ship><label for="cargoType">What is being moved?</label><input id="cargoType" placeholder="Brief description of the cargo" required><div class="err" aria-live="polite"></div></div>
+<div class="field" data-ship><label for="size">Approx. weight or size <span class="opt">(optional)</span></label><input id="size" placeholder="e.g. 10 kg, medium carton"></div>
+<div class="field" data-ship><label for="date">Preferred date <span class="opt">(optional)</span></label><input id="date" type="date"></div>
+<div class="field full"><label for="notes" id="notesLabel">Extra details <span class="opt">(optional)</span></label><textarea id="notes" placeholder="Handling needs, quantity, recurring business need..."></textarea><div class="err" aria-live="polite"></div></div>
+</div>
+<div class="formstatus" id="formstatus" role="alert" hidden></div>
+<button class="btn greenbtn submit" type="submit">Prepare my WhatsApp message</button>
+<div class="formnote">Nothing is sent from this page. Your message opens in WhatsApp for you to review and send.</div>
+<div class="ready" id="ready" hidden>
+<h3>Your message is ready</h3>
+<p>It has not been sent yet. Tap Open WhatsApp, check the message, then press send.</p>
+<pre id="preview"></pre>
+<div class="row"><a class="btn greenbtn" id="waOpen" href="#" target="_blank" rel="noopener">Open WhatsApp</a><button class="btn outline" id="copyBtn" type="button">Copy message</button></div>
+</div>
+</form>
+</div>
+</section>
+
+<section id="faq">
+<div class="wrap">
+<div class="section-top"><div class="kicker">FAQ</div><h2>Before you enquire</h2></div>
+<div class="faq">
+<article><h3>What does THEGO do?</h3><p>We help coordinate airport cargo collection and onward delivery in Lagos, from the first enquiry through to the agreed handover.</p></article>
+<article><h3>Is my enquiry a booking?</h3><p>No. Sending an enquiry does not confirm a booking. A shipment is accepted only after availability, price and terms are confirmed with you.</p></article>
+<article><h3>How is the price decided?</h3><p>Quotes depend on route, cargo size and type, timing and handling needs. You agree the quote before the job is accepted.</p></article>
+<article><h3>Can you collect cargo directly at the airport?</h3><p>That depends on cargo-release rules, your authority to collect and airport requirements. We check these for each shipment.</p></article>
+<article><h3>Do you work with businesses and individuals?</h3><p>Yes. Business and repeat-service requests are a priority, and individual requests are welcome, subject to capacity.</p></article>
+<article><h3>Where do you operate?</h3><p>We are starting in Lagos. Tell us your route in the form and we will confirm whether we can help.</p></article>
+</div>
+</div>
+</section>
+
+<section id="partners" class="darksection">
+<div class="wrap">
+<div class="section-top">
+<div class="kicker">Partners</div>
+<h2>Work with THEGO.</h2>
+<p class="sub">We are open to conversations with businesses and operators who can help move cargo reliably and compliantly in Lagos.</p>
+</div>
+<div class="cards four">
+<article class="card"><span class="tag">Logistics</span><h3>Logistics companies</h3><p>Courier and freight operators with coverage in Lagos.</p></article>
+<article class="card"><span class="tag">Transport</span><h3>Transport providers</h3><p>Vehicle and dispatch operators for onward delivery.</p></article>
+<article class="card"><span class="tag">Cargo handling</span><h3>Cargo handling services</h3><p>Clearing, handling and collection support.</p></article>
+<article class="card"><span class="tag">Business</span><h3>Business partners</h3><p>Importers, retailers and teams with regular cargo needs.</p></article>
+</div>
+<div class="cta" style="margin-top:22px"><div><h2>Interested in working with THEGO?</h2><p>Tell us who you are, your coverage and what you offer.</p></div><a class="btn" href="#quote" data-kind="Partnership">Start a conversation</a></div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<div class="foot">
+<div><a class="logo" href="#home">THE<span>GO</span></a><div>From Arrival to Doorstep.</div></div>
+<div><a href="#services">Services</a> · <a href="#how">How it works</a> · <a href="#terms">Terms</a> · <a href="#privacy">Privacy</a> · <a href="#quote">Contact</a><span id="footWa" hidden> · <a id="footWaLink" href="#" target="_blank" rel="noopener">WhatsApp</a></span></div>
+</div>
+<div class="legal" id="terms">
+<h3>Terms</h3>
+<ul>
+<li>An enquiry is not a booking. A shipment is accepted only after THEGO confirms availability, price and terms with you.</li>
+<li>Quotes depend on route, cargo, timing and availability, and are not guaranteed until confirmed.</li>
+<li>You must give accurate information and have the right to collect and move the cargo.</li>
+<li>THEGO may decline any request.</li>
+</ul>
+</div>
+<div class="legal" id="privacy">
+<h3>Privacy</h3>
+<p>This website does not store the details you type into the form. When you open WhatsApp and send your message, THEGO receives it through WhatsApp, which has its own privacy policy. We use your details only to respond to your enquiry. The site is hosted on GitHub Pages, which may record basic visit information. Please do not send ID numbers or payment details.</p>
+</div>
+<div class="copy">© 2026 THEGO. All rights reserved.</div>
+</div>
+</footer>
+
 <script>
-document.getElementById('quoteForm').addEventListener('submit',function(e){e.preventDefault();const v=id=>document.getElementById(id).value.trim();const msg=['Hello THEGO, I would like to request a quote.','Enquiry type: '+v('kind'),'Name / business: '+v('name'),'Collection location: '+v('origin'),'Delivery destination: '+v('dest'),'Cargo: '+v('cargoType'),'Approx. weight / dimensions: '+(v('size')||'Not specified'),'Preferred date: '+(v('date')||'Flexible / not specified'),'Contact number: '+v('phone'),'Extra details: '+(v('notes')||'None'),'Please confirm availability, collection requirements, quote and applicable terms. I understand this is an enquiry, not a confirmed booking.'].join('\\n');window.open('https://wa.me/?text='+encodeURIComponent(msg),'_blank','noopener,noreferrer');});
-</script></body></html>
+// >>> PUT THE THEGO WHATSAPP NUMBER HERE: international format, digits only, no + (e.g. 2348012345678)
+const WHATSAPP_NUMBER='2349055387851';
+
+const $=id=>document.getElementById(id);
+const waBase=()=>'https://wa.me/'+WHATSAPP_NUMBER.replace(/\D/g,'');
+
+// Footer WhatsApp link only appears once a number is set
+if(WHATSAPP_NUMBER){$('footWaLink').href=waBase();$('footWa').hidden=false;}
+
+// Mobile menu
+const menu=$('menu'),mb=$('menubtn');
+mb.addEventListener('click',()=>{const o=menu.classList.toggle('open');mb.setAttribute('aria-expanded',o);mb.textContent=o?'✕':'☰';});
+menu.addEventListener('click',e=>{if(e.target.tagName==='A'){menu.classList.remove('open');mb.setAttribute('aria-expanded','false');mb.textContent='☰';}});
+
+// Form
+const form=$('quoteForm'),kind=$('kind');
+function applyKind(){
+  const partner=kind.value==='Partnership';
+  document.querySelectorAll('[data-ship]').forEach(f=>{
+    f.hidden=partner;
+    const i=f.querySelector('input[required]');if(i)i.disabled=partner;
+  });
+  $('notes').required=partner;
+  $('notesLabel').innerHTML=partner?'Who you are, your coverage and what you offer':'Extra details <span class="opt">(optional)</span>';
+  $('notes').placeholder=partner?'Company, areas covered, services offered':'Handling needs, quantity, recurring business need...';
+}
+kind.addEventListener('change',applyKind);
+document.querySelectorAll('[data-kind]').forEach(a=>a.addEventListener('click',()=>{kind.value=a.dataset.kind;applyKind();}));
+applyKind();
+
+function setErr(el,msg){const f=el.closest('.field');f.classList.toggle('bad',!!msg);const e=f.querySelector('.err');if(e)e.textContent=msg||'';}
+
+form.addEventListener('submit',e=>{
+  e.preventDefault();
+  $('ready').hidden=true;
+  let first=null;
+  form.querySelectorAll('input[required]:not(:disabled),textarea[required]').forEach(el=>{
+    let msg='';
+    const v=el.value.trim();
+    if(!v)msg='Please fill this in.';
+    else if(el.id==='phone'&&v.replace(/\D/g,'').length<7)msg='Enter a phone number with at least 7 digits.';
+    setErr(el,msg);
+    if(msg&&!first)first=el;
+  });
+  const st=$('formstatus');
+  if(first){st.textContent='Please complete the highlighted fields.';st.hidden=false;first.focus();return;}
+  st.hidden=true;
+  const v=id=>$(id).value.trim();
+  let lines;
+  if(kind.value==='Partnership'){
+    lines=['Hello THEGO, I would like to discuss working together.','Name / business: '+v('name'),'Contact number: '+v('phone'),'About us and what we offer: '+v('notes')];
+  }else{
+    lines=['Hello THEGO, I would like to request a quote.','Enquiry type: '+kind.value,'Name / business: '+v('name'),'Collection location: '+v('origin'),'Delivery destination: '+v('dest'),'Cargo: '+v('cargoType'),'Approx. weight / size: '+(v('size')||'Not specified'),'Preferred date: '+(v('date')||'Flexible / not specified'),'Contact number: '+v('phone'),'Extra details: '+(v('notes')||'None'),'Please confirm availability, collection requirements, quote and terms. I understand this is an enquiry, not a confirmed booking.'];
+  }
+  const msg=lines.join('\n');
+  $('preview').textContent=msg;
+  $('waOpen').href=waBase()+'?text='+encodeURIComponent(msg);
+  $('ready').hidden=false;
+  $('ready').scrollIntoView({behavior:'smooth',block:'nearest'});
+});
+
+form.addEventListener('input',e=>{if(e.target.closest('.field.bad'))setErr(e.target,'');});
+
+$('copyBtn').addEventListener('click',async()=>{
+  const b=$('copyBtn');
+  try{await navigator.clipboard.writeText($('preview').textContent);b.textContent='Copied';}
+  catch(_){b.textContent='Press and hold the text to copy';}
+  setTimeout(()=>b.textContent='Copy message',2500);
+});
+</script>
+</body>
+</html>
